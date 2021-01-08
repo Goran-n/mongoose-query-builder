@@ -1,0 +1,5 @@
+# Force line endings to LF on this repo
+# 2010
+* -crlf
+# 2020
+* text eol=lf
