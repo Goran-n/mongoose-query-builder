@@ -1,5 +1,5 @@
 {
-  "name": "@nikic/mongoose-query-utils",
+  "name": "@nikic/mongoose-query-builder",
   "version": "1.0.1",
   "description": "A useful library to help build meaningful and bug free mongoose queries",
   "main": "dist/index.js",
