@@ -1,6 +1,6 @@
 {
   "name": "@nikic/mongoose-query-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A useful library to help build meaningful and bug free mongoose queries",
   "main": "dist/index.js",
   "author": "Goran Nikic",
