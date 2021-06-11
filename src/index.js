@@ -1,5 +1,9 @@
-import {clone} from 'lodash';
+import {clone, isArray, isEmpty} from 'lodash';
+import {Types} from 'mongoose';
 
+export const ninQuery = (q) => {
+  return q ? {$nin: q} : undefined;
+};
 export const inQuery = (q) => {
   return q ? {$in: q} : undefined;
 };
@@ -11,6 +15,18 @@ export const lteQuery = (q) => {
 };
 export const gteQuery = (q) => {
   return q ? {$gte: q} : undefined;
+};
+
+/**
+ * Converts an array of Strings to Mongoose ObjectIds
+ * @param {Array} arr
+ * @return {Array} []
+ */
+export const objectIdArray = (arr) => {
+  if (!isArray(arr) || isEmpty(arr)) {
+    return null;
+  }
+  return arr.map((elm) => new Types.ObjectId(elm));
 };
 
 export const objectQuery = (q = {}) => {
